@@ -1,0 +1,205 @@
+@font-face 
+{
+        /* 字体名称随意起 */
+        font-family: fusanghua;
+        /*你下载字体所在的位置*/
+        src: 'C:\Users\Jamais  Vu\AppData\Local\Microsoft\Windows\Fonts\华康手札体w5.ttf';
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+
+
+/* 固定顶部导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #d3cce3;
+}
+
+/* 主体部分 */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%; /* 占满整个屏幕 */
+    padding: 20px;
+    height: calc(100vh - 120px); /* 调整高度以适应导航栏和底部注脚 */
+    overflow-y: auto;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 10px;
+    margin-top: 100px;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); /* 自适应宽度 */
+    min-width: 350px; /* 最小宽度 */
+    height: calc((100vh - 120px) / 2 - 20px); /* 高度适应屏幕的一半 */
+}
+
+/* .section-inner {
+    position: relative;
+    z-index: 1;
+} */
+
+.section-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.content {
+    flex-grow: 1; /* 允许内容区域撑满剩余空间 */
+    text-align: left; /* 文本左对齐 */
+}
+
+.cta-button {
+    /* 移除原有样式中的display:inline-block，因为Flex会自动处理排列 */
+    margin-top: auto; /* 将按钮推到容器的底部 */
+    /* 保持其他原有的按钮样式 */
+    display: flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    background-color: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute; /* 确保按钮在毛玻璃之上 */
+    bottom: 20px;
+    left: 20px;
+    width: 150px; /* 调整宽度 */
+    text-align: center;
+    z-index: 1; /* 确保按钮在毛玻璃之上 */
+}
+
+
+
+.section-content h2 {
+    margin-bottom: 10px;
+}
+
+.section-content .content {
+    flex-grow: 1;
+}
+
+.section:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* .hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(5px); <!--毛玻璃效果--> 
+}  */
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(5px); /* 毛玻璃效果 */
+    z-index: 0; /* 将悬浮层置于按钮之下 */
+}
+
+.section:hover .hover-content {
+    opacity: 1;
+}
+
+.hover-text {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    backdrop-filter: blur(5px);
+}
+
+
+
+.cta-button:hover {
+    background-color: #764ba2;
+}
+
+#biaoqian1 {
+    font-family:fusanghu;
+    font-style: oblique;
+    font-size: 29px;
+    font-weight: 900;
+    color: rgb(249, 107, 21);
+}
+
+
+
+footer {
+    background-color: #667eea;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
