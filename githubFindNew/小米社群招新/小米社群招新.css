@@ -1,0 +1,155 @@
+/* 整体样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F0F0F0;
+        }
+
+        .container {
+            
+            border-radius:40px;
+            width: 500px;
+            margin: 50px auto;
+            background-color: #FFFFFF;
+        }
+        
+        .top img{
+            border-radius: 40px 40px 0px 0px;
+        }
+
+        /* 上半部分样式 */
+        /* 类head中的内容向上移动 */
+        .head {
+            margin-top: -50px;
+        }
+
+        .head p {
+            /* 设置段落字体样式 */
+            color: #fffeff;
+            font-size: 18px;
+            font-weight: 700;
+            /* 设置段落位置 */
+            margin-left: 320px;
+            /* 减小底部外边距，使头像上移 */
+            margin-bottom: -40px;
+        }
+
+        .head img {
+            /* 设置头像位置 */
+            border-radius: 10px;
+            /* 设置头像圆角 */
+            margin-left: 400px;
+        }
+        
+        .new img:first-child{
+            border-radius: 10px;
+        }
+        /* 下半部分：每条动态的样式 */
+
+        .new {
+            /* 限定每条动态的上下间隔（外边距）*/
+            margin: 40px 0;
+            /* 动态间的分割线 */
+            border-bottom: 1px solid #e4e4e4;
+        }
+
+        .pic {
+            /* 调整头像位置 */
+            margin-left: 20px;
+        }
+
+
+        .info {
+            /* 将动态的内容放在头像旁边 */
+            width: 350px;
+            margin-left: 100px;
+            margin-top: -80px;
+            line-height: 22px;
+            
+        }
+
+        /* 类info中的第一个p元素 */
+        .info p:first-child {
+            /* 动态中的昵称样式 */
+            font-size: 18px;
+            color: #606a8e;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+        
+        .info  img{
+            margin-right: 4000000px;
+        }
+    
+
+        .time {
+            /* 调整“发布时间”的位置 */
+            margin-left: 100px;
+            
+        }
+
+        .time p {
+            /* 设置发布时间的字体样式 */
+            font-size: 14px;
+            color: #b2b2b2;
+            margin-bottom: -23px;
+        }
+
+        .btn {
+            /* 评论按钮位置 */
+            border-radius: 5px;
+            margin-left: 320px;
+        }
+
+        .comment {
+            width: 364px;
+            background-color: #f7f7f7;
+            margin-left: 100px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .like {
+            /* 点赞区 */
+            border-bottom: 1px solid #e3e3e3;
+            line-height: 40px;
+        }
+
+        .like img {
+            /* 点赞图片位置 */
+            margin-left: 12px;
+        }
+
+        .like span {
+            /* 点赞人昵称 */
+            font-size: 14px;
+            color: #62648a;
+            padding: 0 6px;
+        }
+
+        .reply {
+            /* 评论内容 */
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+
+        .reply p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        .reply span {
+            /* 评论人昵称 */
+            color: #62648a;
+            padding: 0 0 0 6px;
+            font-size: 16px;
+        }
+        td {
+            /* 单元格的左右内边距 */
+            padding: 0 20px;
+            
+        }
+        .su7 a,u{
+            text-decoration: none;
+        }
